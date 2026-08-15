@@ -1,45 +1,53 @@
-<h1>Sun Glass</h1>
+<section class="products-section">
 
-<div class="product-grid" id="productContainer">
+    <div class="container">
 
-<div
-class="product-card"
-data-name="Premium Sun Glass"
-data-price="1800"
->
+        <div class="section-header">
 
-<img
-src="../images/sunglass.jpg"
-alt="Premium Sun Glass"
-loading="lazy"
->
+            <h1>Sun Glass</h1>
 
-<div class="product-info">
+            <div class="filter-area">
 
-<h3>
-Premium Sun Glass
-</h3>
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search sun glass..."
+                >
 
-<p class="category">
-Sun Glass
-</p>
+                <select id="sortProducts">
 
-<p class="price">
-৳1,800
-</p>
+                    <option value="default">
+                        Sort Products
+                    </option>
 
-<button
-class="btn add-cart"
-data-id="601"
-data-name="Premium Sun Glass"
-data-price="1800"
-data-image="../images/sunglass.jpg"
->
-Add To Cart
-</button>
+                    <option value="low">
+                        Price Low to High
+                    </option>
 
-</div>
+                    <option value="high">
+                        Price High to Low
+                    </option>
 
-</div>
+                </select>
 
-</div>
+            </div>
+
+        </div>
+
+
+        <!-- Products will come from database -->
+
+        <div
+            class="product-grid"
+            id="categoryProducts"
+        >
+
+            <p>
+                Loading products...
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
