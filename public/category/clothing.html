@@ -1,124 +1,53 @@
 <section class="products-section">
 
-<div class="container">
+    <div class="container">
 
-<h1>Clothing</h1>
+        <div class="section-header">
 
-<div class="filter-area">
+            <h1>Clothing</h1>
 
-<input
-type="search"
-id="searchInput"
-placeholder="Search clothing..."
->
+            <div class="filter-area">
 
-<select id="sortProducts">
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search clothing..."
+                >
 
-<option value="default">
-Sort Products
-</option>
+                <select id="sortProducts">
 
-<option value="low">
-Price Low to High
-</option>
+                    <option value="default">
+                        Sort Products
+                    </option>
 
-<option value="high">
-Price High to Low
-</option>
+                    <option value="low">
+                        Price Low to High
+                    </option>
 
-</select>
+                    <option value="high">
+                        Price High to Low
+                    </option>
 
-</div>
+                </select>
 
+            </div>
 
-<div
-class="product-grid"
-id="productContainer"
->
-
-<div
-class="product-card"
-data-name="Premium T Shirt"
-data-price="850"
->
-
-<img
-src="../images/tshirt.jpg"
-alt="Premium T Shirt"
-loading="lazy"
->
-
-<div class="product-info">
-
-<h3>
-Premium T Shirt
-</h3>
-
-<p class="category">
-Clothing
-</p>
-
-<p class="price">
-৳850
-</p>
-
-<button
-class="btn add-cart"
-data-id="301"
-data-name="Premium T Shirt"
-data-price="850"
-data-image="../images/tshirt.jpg"
->
-Add To Cart
-</button>
-
-</div>
-
-</div>
+        </div>
 
 
-<div
-class="product-card"
-data-name="Mens Shirt"
-data-price="1500"
->
+        <!-- Products will come from database -->
 
-<img
-src="../images/shirt.jpg"
-alt="Mens Shirt"
-loading="lazy"
->
+        <div
+            class="product-grid"
+            id="categoryProducts"
+        >
 
-<div class="product-info">
+            <p>
+                Loading products...
+            </p>
 
-<h3>
-Mens Shirt
-</h3>
+        </div>
 
-<p class="category">
-Clothing
-</p>
-
-<p class="price">
-৳1,500
-</p>
-
-<button
-class="btn add-cart"
-data-id="302"
-data-name="Mens Shirt"
-data-price="1500"
-data-image="../images/shirt.jpg"
->
-Add To Cart
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
