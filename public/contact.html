@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+>
+
+<title>Contact Us | Your Store</title>
+
+<meta
+name="description"
+content="Contact Your Store for product information, orders, delivery and customer support."
+>
+
+<meta
+name="robots"
+content="index, follow"
+>
+
+<link
+rel="canonical"
+href="https://www.yourwebsite.com/contact.html"
+>
+
+<link
+rel="stylesheet"
+href="css/style.css"
+>
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+<div class="container header-container">
+
+<div class="logo">
+
+<a href="index.html">
+Your Store
+</a>
+
+</div>
+
+
+<nav class="navbar">
+
+<a href="index.html">
+Home
+</a>
+
+<a href="about.html">
+About
+</a>
+
+<a href="contact.html">
+Contact
+</a>
+
+<a href="checkout.html">
+Cart
+(<span id="cartCount">0</span>)
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main>
+
+<section class="hero">
+
+<div class="container">
+
+<h1>
+Contact Us
+</h1>
+
+<p>
+We are here to help.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="products-section">
+
+<div class="container">
+
+<h2>
+Get In Touch
+</h2>
+
+
+<form
+id="contactForm"
+>
+
+<label>
+Your Name
+</label>
+
+<input
+type="text"
+id="contactName"
+required
+>
+
+
+<label>
+Email
+</label>
+
+<input
+type="email"
+id="contactEmail"
+required
+>
+
+
+<label>
+Phone
+</label>
+
+<input
+type="tel"
+id="contactPhone"
+>
+
+
+<label>
+Message
+</label>
+
+<textarea
+id="contactMessage"
+rows="7"
+required
+></textarea>
+
+
+<button
+type="submit"
+class="btn"
+>
+Send Message
+</button>
+
+</form>
+
+
+<div id="contactResult">
+
+</div>
+
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+<div class="container footer-grid">
+
+<div>
+
+<h3>
+Your Store
+</h3>
+
+<p>
+Your trusted online shopping store.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Customer Service
+</h3>
+
+<a href="about.html">
+About Us
+</a>
+
+<a href="contact.html">
+Contact Us
+</a>
+
+</div>
+
+
+<div>
+
+<h3>
+Legal
+</h3>
+
+<a href="terms-condition.html">
+Terms & Conditions
+</a>
+
+<a href="privacy-policy.html">
+Privacy Policy
+</a>
+
+</div>
+
+</div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+
+<script>
+
+document
+.getElementById("contactForm")
+.addEventListener(
+"submit",
+function(event){
+
+event.preventDefault();
+
+document
+.getElementById("contactResult")
+.innerHTML =
+
+`
+<div class="notice">
+
+<h3>
+Thank You!
+</h3>
+
+<p>
+Your message has been received.
+Our support team will contact you.
+</p>
+
+</div>
+`;
+
+this.reset();
+
+});
+
+</script>
+
+</body>
+
+</html>
