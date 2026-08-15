@@ -1,75 +1,53 @@
-<h1>Shoe</h1>
+<section class="products-section">
 
-<div class="filter-area">
+    <div class="container">
 
-<input
-type="search"
-id="searchInput"
-placeholder="Search shoes..."
->
+        <div class="section-header">
 
-<select id="sortProducts">
+            <h1>Shoe</h1>
 
-<option value="default">
-Sort Products
-</option>
+            <div class="filter-area">
 
-<option value="low">
-Price Low to High
-</option>
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search shoes..."
+                >
 
-<option value="high">
-Price High to Low
-</option>
+                <select id="sortProducts">
 
-</select>
+                    <option value="default">
+                        Sort Products
+                    </option>
 
-</div>
+                    <option value="low">
+                        Price Low to High
+                    </option>
+
+                    <option value="high">
+                        Price High to Low
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
 
 
-<div
-class="product-grid"
-id="productContainer"
->
+        <!-- Products will come from database -->
 
-<div
-class="product-card"
-data-name="Running Shoe"
-data-price="2500"
->
+        <div
+            class="product-grid"
+            id="categoryProducts"
+        >
 
-<img
-src="../images/shoe-1.jpg"
-alt="Running Shoe"
-loading="lazy"
->
+            <p>
+                Loading products...
+            </p>
 
-<div class="product-info">
+        </div>
 
-<h3>
-Running Shoe
-</h3>
+    </div>
 
-<p class="category">
-Shoe
-</p>
-
-<p class="price">
-৳2,500
-</p>
-
-<button
-class="btn add-cart"
-data-id="401"
-data-name="Running Shoe"
-data-price="2500"
-data-image="../images/shoe-1.jpg"
->
-Add To Cart
-</button>
-
-</div>
-
-</div>
-
-</div>
+</section>
