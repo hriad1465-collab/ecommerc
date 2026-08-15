@@ -1,45 +1,53 @@
-<h1>Watch</h1>
+<section class="products-section">
 
-<div class="product-grid" id="productContainer">
+    <div class="container">
 
-<div
-class="product-card"
-data-name="Smart Watch"
-data-price="3500"
->
+        <div class="section-header">
 
-<img
-src="../images/watch-1.jpg"
-alt="Smart Watch"
-loading="lazy"
->
+            <h1>Watch</h1>
 
-<div class="product-info">
+            <div class="filter-area">
 
-<h3>
-Smart Watch
-</h3>
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search watch..."
+                >
 
-<p class="category">
-Watch
-</p>
+                <select id="sortProducts">
 
-<p class="price">
-৳3,500
-</p>
+                    <option value="default">
+                        Sort Products
+                    </option>
 
-<button
-class="btn add-cart"
-data-id="501"
-data-name="Smart Watch"
-data-price="3500"
-data-image="../images/watch-1.jpg"
->
-Add To Cart
-</button>
+                    <option value="low">
+                        Price Low to High
+                    </option>
 
-</div>
+                    <option value="high">
+                        Price High to Low
+                    </option>
 
-</div>
+                </select>
 
-</div>
+            </div>
+
+        </div>
+
+
+        <!-- Products will come from database -->
+
+        <div
+            class="product-grid"
+            id="categoryProducts"
+        >
+
+            <p>
+                Loading products...
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
